@@ -1,0 +1,77 @@
+/* Default styles for desktop */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .title {
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0; 
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .icons i,
+.navbar .icons select {
+  margin-left: 15px;
+}
+
+.hamburger {
+  display: none; 
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Styles for Mobile */
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease; 
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: block; 
+  }
+
+  .icons {
+    display: none; 
+  }
+
+  .navbar .title {
+    display: none; 
+  }
+}

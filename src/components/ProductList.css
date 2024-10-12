@@ -1,0 +1,40 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .product-card img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+  }
+  
+  .product-card h3 {
+    font-size: 0.8rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  .wishlist-btn {
+    background-color: transparent;
+    border: none;
+    color: #f00;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%;
+    }
+  }
+  

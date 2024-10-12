@@ -1,0 +1,42 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .sort-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+  }
+  
+  .filters {
+    display: none;
+  }
+  
+  .filters.active {
+    display: block;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group label {
+    margin-left: 10px;
+  }
+  
